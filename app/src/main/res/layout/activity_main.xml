@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#817D7D"
+        android:text="CSE476 Currency Converter"
+        android:textColor="#FFFFFF" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:hint="Please select currency types" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/convertFromSpinner"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/convertToSpinner"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#4CAF50"
+        android:text="CONVERT">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tvIsConnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
